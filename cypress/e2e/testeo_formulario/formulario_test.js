@@ -29,7 +29,8 @@ describe("Testear el formulario y llenarlo", () => {
     cy.get("textarea#currentAddress").type("Texto dentro del Current Address");
     cy.get(".css-1hwfws3").eq(1).click(); // Abre el menú
     cy.contains("Haryana").click(); // Haz clic en la opción "Haryana"
-    cy.get('div[id="city"] div').eq(1).click();
-    cy.contains("Karnal").click();
+    cy.get('div[id="city"] div').eq(2).click();
+    cy.get('#react-select-4-option-0').click();
   });
 });
+
